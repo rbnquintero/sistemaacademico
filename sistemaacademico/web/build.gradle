@@ -1,0 +1,31 @@
+dependsOn(':core')
+apply plugin: 'eclipse-wtp'
+apply plugin: 'war'
+
+dependencies {
+	compile group: 'org.springframework', name: 'spring-web', version: '4.0.4.RELEASE'
+	compile group: 'org.springframework', name: 'spring-core', version: '4.0.4.RELEASE'
+	compile group: 'org.springframework.security', name: 'spring-security-web', version: '3.2.4.RELEASE'
+	compile group: 'org.springframework.security', name: 'spring-security-config', version: '3.2.4.RELEASE'
+	compile group: 'org.springframework.security', name: 'spring-security-core', version: '3.2.4.RELEASE'
+	compile group: 'org.springframework.security', name: 'spring-security-ldap', version: '3.2.4.RELEASE'
+	compile group: 'org.springframework.social', name: 'spring-social-config', version: '1.1.0.RELEASE'
+	compile group: 'org.springframework.social', name: 'spring-social-core', version: '1.1.0.RELEASE'
+	compile group: 'org.springframework.social', name: 'spring-social-security', version: '1.1.0.RELEASE'
+	compile group: 'org.springframework.social', name: 'spring-social-web', version: '1.1.0.RELEASE'
+	compile group: 'org.springframework.social', name: 'spring-social-facebook', version: '1.1.0.RELEASE'
+	compile 'org.springframework.security:spring-security-taglibs:3.2.4.RELEASE'
+	compile 'org.springframework.social:spring-social-facebook-web:1.1.1.RELEASE'
+	compile 'org.springframework.security:spring-security-crypto:3.2.4.RELEASE'
+	compile 'javax.servlet:servlet-api:2.5'
+	compile 'javax.servlet.jsp:jsp-api:2.2'
+	compile 'javax.servlet:jstl:1.2'
+	compile 'org.sitemesh:sitemesh:3.0.0'
+	compile 'commons-fileupload:commons-fileupload:1.2.2'
+	compile group:'log4j', name:'log4j', version:'1.2.16'
+	compile group:'org.slf4j', name:'slf4j-log4j12', version:'1.7.7'
+
+	runtime 'org.springframework:spring-webmvc:4.0.4.RELEASE'
+
+	compile project(':core')
+}

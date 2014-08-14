@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="services">
+		<class>com.rbnquintero.system.persistence.domain.Alumno</class>
+		<class>com.rbnquintero.system.persistence.domain.Calificacionesprep</class>
+		<class>com.rbnquintero.system.persistence.domain.Calificacionesprim</class>
+		<class>com.rbnquintero.system.persistence.domain.Curso</class>
+		<class>com.rbnquintero.system.persistence.domain.Estado</class>
+		<class>com.rbnquintero.system.persistence.domain.Grado</class>
+		<class>com.rbnquintero.system.persistence.domain.Login</class>
+		<class>com.rbnquintero.system.persistence.domain.Maestro</class>
+		<class>com.rbnquintero.system.persistence.domain.Materia</class>
+		<class>com.rbnquintero.system.persistence.domain.Mensaje</class>
+		<class>com.rbnquintero.system.persistence.domain.MotivoReporte</class>
+		<class>com.rbnquintero.system.persistence.domain.Nivel</class>
+		<class>com.rbnquintero.system.persistence.domain.Reporte</class>
+		<class>com.rbnquintero.system.persistence.domain.Tarea</class>
+		<class>com.rbnquintero.system.persistence.domain.TareasAlumno</class>
+		<class>com.rbnquintero.system.persistence.domain.TipoReporte</class>
+		<class>com.rbnquintero.system.persistence.domain.TipoUsuario</class>
+	</persistence-unit>
+</persistence>

@@ -1,0 +1,28 @@
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'eclipse'
+    apply plugin: 'eclipse-wtp'
+
+    repositories {
+       mavenCentral()
+       maven { url 'http://download.java.net/maven/1' }
+       maven { url 'http://download.java.net/maven/2' }
+    }
+
+    dependencies {
+        testCompile 'junit:junit:4.8.2'
+    }
+
+    version = '1.0'
+
+    jar {
+        manifest.attributes provider: 'Gandalf Co.'
+    }
+
+    test {
+        testLogging {
+          // Show that tests are run in the command-line output
+          events 'started', 'passed'
+        }
+    }
+}
