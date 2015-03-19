@@ -1,7 +1,10 @@
 subprojects {
     apply plugin: 'java'
     apply plugin: 'eclipse'
-    apply plugin: 'eclipse-wtp'
+    
+    tasks.withType(JavaCompile) {
+      options.encoding = 'UTF-8'
+    }
 
     repositories {
        mavenCentral()

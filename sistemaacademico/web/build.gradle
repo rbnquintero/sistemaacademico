@@ -1,4 +1,3 @@
-dependsOn(':core')
 apply plugin: 'eclipse-wtp'
 apply plugin: 'war'
 

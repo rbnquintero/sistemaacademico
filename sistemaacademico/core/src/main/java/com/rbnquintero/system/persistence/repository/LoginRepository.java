@@ -15,5 +15,8 @@ public interface LoginRepository extends PagingAndSortingRepository<Login, Long>
 	
 	@Query("from Login where username = ?1 and password = ?2")
 	public Login findLoginByUsernameAndPassword(String username, String password);
+	
+	@Query("from Login where username = ?1")
+	public Login findLoginByUsername(String username);
 
 }

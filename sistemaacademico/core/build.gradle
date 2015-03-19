@@ -1,12 +1,6 @@
-task myJar(type: Jar)
-
-artifacts{
-	archives myJar
-}
-
 apply plugin: 'eclipse-wtp'
-apply plugin: 'ear'
-ear.onlyIf { false }
+apply plugin: 'java'
+
 jar {
     baseName = 'core-services'
     version =  '0.1.0'

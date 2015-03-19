@@ -31,7 +31,6 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
 			AuthenticationException exception) throws IOException, ServletException {
 
 		String exceptionStr = exception.getMessage();
-		exception.printStackTrace();
 		request.getRequestDispatcher("/login/" + exceptionStr).forward(request, response);
 	}
 

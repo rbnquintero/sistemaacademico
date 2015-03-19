@@ -3,6 +3,6 @@
 <html>
 <body>
 	<h1>Bienvenido!</h1>
-	
+	<a href="/web/j_spring_security_logout">Cerrar sesión</a>
 </body>
 </html>
